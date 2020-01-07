@@ -27,7 +27,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #localapp
     'football.apps.FootballConfig',
+    'cricket.apps.CricketConfig',
 
     #rest_framework
     'rest_framework',
