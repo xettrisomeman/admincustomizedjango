@@ -1,0 +1,22 @@
+{% extends 'defaulthome.html' %}
+
+
+{% block content %}
+
+
+{% for club in clubs %}
+<hr>
+<br>
+<div>
+<h2>Club Name : {{club}}</h2>
+<ul>
+<li>Date Formed: {{club.date_formed}}</li>
+<li>Country : {{club.country}}</li>
+</ul>
+</div>
+<br>
+
+{% endfor %}
+<a href="{% url 'football:players' %}"><<<</a>
+{% endblock %}
+

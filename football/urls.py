@@ -10,7 +10,9 @@ app_name='football'
 
 urlpatterns = [
     path('' , views.HomePageView.as_view() , name='homepage'),
-
+    path('players/' , views.PlayerList.as_view() , name='players'),
+    path('clubs/' ,views.ClubList.as_view() ,name='clubs'),
+    
 
 ]
 

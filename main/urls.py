@@ -4,8 +4,8 @@ from django.urls import path , include
 
 urlpatterns = [
     path('', admin.site.urls),
-    path('football/', include('football.urls' , namespace='football')),
-    path('cricket/' , include('cricket.urls' , namespace='cricket')),
+    path('footballs/', include('football.urls' , namespace='football')),
+    path('crickets/' , include('cricket.urls' , namespace='cricket')),
 
 ]
 

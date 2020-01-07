@@ -1,0 +1,26 @@
+{% extends 'defaulthome.html' %}
+
+
+{% block title %}
+Players
+{% endblock title%}
+
+
+{% block content %}
+
+{% for player in players %}
+<hr>
+<br>
+<div>
+<h2>Player Name : {{player}}</h2>
+<ul>
+<li>Date Of Birth: {{player.date_of_birth}}</li>
+<li>Current Club : <a style="text-decoration:None" href="{% url 'football:clubs' %}">{{player.joined_club}}</a></li>
+<li>Nationality : {{player.country}}</li>
+</ul>
+</div>
+<br>
+
+{% endfor %}
+
+{% endblock content %}

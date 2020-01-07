@@ -58,3 +58,4 @@ class ClubAdmin(admin.ModelAdmin):
 
 admin.site.register(Player , PlayerAdmin)
 admin.site.register(Club , ClubAdmin)
+
