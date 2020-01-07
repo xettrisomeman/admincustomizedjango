@@ -7,5 +7,5 @@ from . import views
 app_name='cricket'
 
 urlpatterns = [
-    path('cricket/' ,views.HomePageView.as_view() , name='homepage')
+    path('' ,views.HomePageView.as_view() , name='homepage')
 ]
