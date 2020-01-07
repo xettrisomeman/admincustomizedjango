@@ -1,0 +1,2 @@
+# admincustomizedjango
+djangoadmincustomization
